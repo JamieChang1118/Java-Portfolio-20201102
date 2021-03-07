@@ -21,7 +21,7 @@
             $(document).ready(function () {
                 $("#add").on("click", function () {
                     var jsonObj = $('#myform').serializeObject(); // 將表單資料封裝序列
-                    var jsonStr = JSON.stringify(jsonObj); // 將物件資料轉為 Json 字串
+                    var jsonStr = JSON.stringify(jsonObj); // 將物件資料轉為 Json 字串                
                     $.ajax({
                         url: "${pageContext.request.contextPath}/mvc/portfolio/investor/",
                         type: "POST",
